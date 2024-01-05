@@ -28,7 +28,7 @@ Ein Discord-Bot, der Minecraft-Server steuern kann
 
 ```python3.10 -m pip install mcrcon``
 
-# Laufend
+# Start
 
 ## Einen Server erstellen
 Erstellen Sie einen neuen Ordner im Verzeichnis ~/servers, z.B. ~/servers/myserver
