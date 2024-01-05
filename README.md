@@ -1,10 +1,10 @@
-# PLEASE NOTE!
-**This program was programmed in linux. Some changes may need to be made.**
+# BITTE BEACHTEN!
+**Dieses Programm wurde in Linux programmiert. Einige Änderungen müssen eventuell vorgenommen werden.
 
 # Minecraft-Manager
-A Discord bot that can control minecraft servers
+Ein Discord-Bot, der Minecraft-Server steuern kann
 
-# Dependancies
+# Abhängigkeiten
 **py-cord v2.3**: Discord API
 **mcrcon**: Minecraft Rcon commmunicator
 
@@ -16,7 +16,7 @@ A Discord bot that can control minecraft servers
 
 **mcrcon**
 
-```py -3.10 -m pip install mcrcon```
+```py -3.10 -m pip install mcrcon``
 
 ## Linux/Mac-OSX
 **py-cord**
@@ -26,35 +26,35 @@ A Discord bot that can control minecraft servers
 
 **mcrcon**
 
-```python3.10 -m pip install mcrcon```
+```python3.10 -m pip install mcrcon``
 
-# Running
+# Laufend
 
-## Making a server
-Make a new folder in the ~/servers directory, e.g. ~/servers/myserver
+## Einen Server erstellen
+Erstellen Sie einen neuen Ordner im Verzeichnis ~/servers, z.B. ~/servers/myserver
 
-In said folder install the server.jar file, and run it e.g. ```java -jar server.jar``` 
+Installieren Sie in diesem Ordner die Datei server.jar und starten Sie sie, z.B. ```java -jar server.jar``` 
 
-create a start.sh file e.g.
+Erstellen Sie eine start.sh Datei z.B.
 
-``` #!bin/bash (new line) java -Xms1024M -Xmx1024M -jar minecraft.jar --nogui```
+``` #!bin/bash (neue Zeile) java -Xms1024M -Xmx1024M -jar minecraft.jar --nogui```
 
-Then use the following command:
+Dann verwenden Sie den folgenden Befehl:
 
 ```chmod +x start.sh```
 
-Make sure it works by using: ```./start.sh```
+Stellen Sie sicher, dass es funktioniert, indem Sie verwenden: ```./start.sh```
 
-## Adding the server
-Start the bot, and then use the command /add_server SERVERNAME PORT e.g. 56775 PASSWORD
+## Hinzufügen des Servers
+Starten Sie den Bot, und verwenden Sie dann den Befehl /add_server SERVERNAME PORT z.B. 56775 PASSWORD
 
-The password and port are set in server.properties in your server. THESE ARE NOT FOR CONNECTING TO THE SERVER. 
+Das Passwort und der Port werden in der server.properties Ihres Servers festgelegt. DIESE SIND NICHT FÜR DIE VERBINDUNG ZUM SERVER GEDACHT. 
 
-Enable rcon in the server in server.properties by replacing false with true at enable-rcon=false 
+Aktivieren Sie rcon auf dem Server in server.properties, indem Sie false durch true bei enable-rcon=false ersetzen 
 
-Set your password and port in server.properties where it says rcon.port=PORT and rcon.password=PASSWORD
+Setzen Sie Ihr Passwort und den Port in server.properties, wo rcon.port=PORT und rcon.password=PASSWORD steht.
 
-## Running the server
-Now you can run your server. Use the command /start SERVERNAME and it should start. 
+## Ausführen des Servers
+Jetzt können Sie Ihren Server starten. Verwenden Sie den Befehl /start SERVERNAME und er sollte starten. 
 
-Note: It will take longer to start on the first start up.
+Hinweis: Es dauert länger, beim ersten start
